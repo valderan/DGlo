@@ -1,0 +1,2 @@
+# DGlo
+GLO diploma thesis
