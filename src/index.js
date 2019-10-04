@@ -12,18 +12,18 @@ import 'fetch-polyfill';
 
 // project
 import headerEvents from './modules/headerEvents';
+import gift from "./modules/gift";
 // -- end IMPORT block --
 
 // -- EVENT initialize block --
-
 // события для header index
 headerEvents();
 
 // -- end EVENT block --
 
 // -- WORK block --
-
-// header
+// подарок
+gift();
 
 
 // -- end WORK block --

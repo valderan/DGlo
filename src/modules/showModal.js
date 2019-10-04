@@ -15,7 +15,7 @@ const showModal = (id) => {
         let target = event.target;
 
         // закрытие формы
-        if (target.classList.contains('close_icon')) {
+        if (target.classList.contains('close_icon') || target.classList.contains('close-btn')) {
             hideForm();
         } else {
             if (!target.closest('.form-content')) {
