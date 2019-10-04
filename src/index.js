@@ -9,5 +9,3 @@ import 'formdata-polyfill';
 import 'es6-promise/auto';
 import 'fetch-polyfill';
 
-let h1 = document.querySelector('h1');
-h1.innerText = 'it works';
