@@ -1,4 +1,3 @@
-
 // -- IMPORT block --
 
 // system
@@ -11,6 +10,7 @@ import 'es6-promise/auto';
 import 'fetch-polyfill';
 
 // project
+import dropDownHeaderMenu from './modules/dropDownHeaderMenu';
 import headerEvents from './modules/headerEvents';
 // -- end IMPORT block --
 
@@ -22,8 +22,5 @@ headerEvents();
 // -- end EVENT block --
 
 // -- WORK block --
-
-// header
-
 
 // -- end WORK block --
