@@ -1,8 +1,8 @@
 
 
-const freeVisitForm = () => {
+const showModal = (id) => {
 
-    const visitForm = document.getElementById('free_visit_form');
+    const visitForm = document.getElementById(id);
     visitForm.style.display = 'block';
 
     // обработка при закрытии формы
@@ -27,4 +27,4 @@ const freeVisitForm = () => {
 
 };
 
-export default freeVisitForm;
+export default showModal;

@@ -1,5 +1,5 @@
 import dropDownHeaderMenu from "./dropDownHeaderMenu";
-import freeVisitForm from "./freeVisitForm";
+import showModal from "./showModal";
 
 
 const headerEvents = () => {
@@ -17,11 +17,14 @@ const headerEvents = () => {
             dropDownHeaderMenu();
         };
 
-        // open freeVisitForm
+        // open freeVisitForm (modal window 1)
         if (target.closest('.open-popup')) {
-            freeVisitForm();
+            showModal('free_visit_form');
         }
         
+        if (target.closest('.callback-btn')) {
+            showModal('callback_form');
+        }
 
     } );
     
