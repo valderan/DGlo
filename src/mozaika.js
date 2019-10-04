@@ -1,3 +1,4 @@
+
 // -- IMPORT block --
 
 // system
@@ -10,17 +11,22 @@ import 'es6-promise/auto';
 import 'fetch-polyfill';
 
 // project
-import dropDownHeaderMenu from './modules/dropDownHeaderMenu';
 import headerEvents from './modules/headerEvents';
+import checkValidation from "./modules/checkValidation";
 // -- end IMPORT block --
 
 // -- EVENT initialize block --
-
 // события для header index
 headerEvents();
 
 // -- end EVENT block --
 
-// -- WORK block --
+// -- HEADER block --
+//валидация форм в header
+checkValidation();
 
-// -- end WORK block --
+// -- end HEADER block --
+
+// -- BODY block --
+
+// -- end BODY block --

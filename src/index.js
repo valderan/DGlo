@@ -13,6 +13,7 @@ import 'fetch-polyfill';
 // project
 import headerEvents from './modules/headerEvents';
 import gift from "./modules/gift";
+import checkValidation from "./modules/checkValidation";
 // -- end IMPORT block --
 
 // -- EVENT initialize block --
@@ -21,9 +22,15 @@ headerEvents();
 
 // -- end EVENT block --
 
-// -- WORK block --
+// -- HEADER block --
+//валидация форм в header
+checkValidation();
+
+// -- end HEADER block --
+
+// -- BODY block --
 // подарок
 gift();
 
 
-// -- end WORK block --
+// -- end BODY block --
