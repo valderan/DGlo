@@ -5,14 +5,15 @@ const gift = () => {
 
     const giftObj = document.querySelector('.fixed-gift');
     
-    // open gift modal window 
-    const giftOpen = () => {
-        giftObj.style.display = 'none';
-        showModal('gift');
+    if (giftObj) {
+        // open gift modal window 
+        const giftOpen = () => {
+            giftObj.style.display = 'none';
+            showModal('gift');
+        };
+
+        giftObj.addEventListener('click', giftOpen);
     };
-
-    giftObj.addEventListener('click', giftOpen);
-
-}
+};
 
 export default gift;

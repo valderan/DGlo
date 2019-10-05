@@ -2,9 +2,7 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        mozaika: './src/mozaika.js',
-        schelkovo: './src/schelkovo.js'
+        main: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, './dist'),

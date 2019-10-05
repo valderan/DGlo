@@ -66,7 +66,9 @@ const checkValidation = () => {
     validForm5.init();
 
 
-    const inputs = 'banner-form-name,card_order-name,form2-name,form1-name'.split(',');
+    const inputs = 'banner-form-name,card_order-name,form2-name,form1-name'.split(','),
+        phones = 'callback_form1-phone,callback_form2-phone,callback_form-phone,callback_footer_form-phone,phone'.split(',');
+    
     inputs.forEach(elem => {
         let input = document.getElementById(elem);
         input.addEventListener('input',() => {
@@ -74,6 +76,13 @@ const checkValidation = () => {
         });
     });
     
+    phones.forEach(elem => {
+        let input = document.getElementById(elem);
+        input.addEventListener('input',() => {
+            input.value = input.value.replace( /[^\d\.\+\(\)\- ]$/ , '');
+        });
+    });
+
 };
 
 export default checkValidation;

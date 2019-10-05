@@ -14,21 +14,37 @@ import 'fetch-polyfill';
 import headerEvents from './modules/headerEvents';
 import gift from "./modules/gift";
 import checkValidation from "./modules/checkValidation";
+import totop from "./modules/totop";
+import sendForm from "./modules/sendForm";
+
 // -- end IMPORT block --
 
 // -- EVENT initialize block --
+
 // события для header index
 headerEvents();
 
 // -- end EVENT block --
 
 // -- HEADER block --
+
+// появление кнопки скрола вверх 
+totop();
+
 //валидация форм в header
 checkValidation();
+
+// отправка форм
+sendForm('form1');
+sendForm('form2');
+sendForm('card_order');
+sendForm('footer_form');
+sendForm('banner-form');
 
 // -- end HEADER block --
 
 // -- BODY block --
+
 // подарок
 gift();
 

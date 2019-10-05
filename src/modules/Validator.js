@@ -13,15 +13,6 @@ class Validator{
         this.applyStyle();
         this.setPattern();
         this.elementsForm.forEach(elem => elem.addEventListener('change', this.checkIt.bind(this)));
-
-        // отключим sendform
-        // this.form.addEventListener('submit',  e => {
-        //     this.elementsForm.forEach(elem => this.checkIt({target: elem}));
-        //     if (this.error.size) {
-        //         e.preventDefault();
-        //     }
-        // });
-
     }
 
     isValid(elem) {
@@ -119,19 +110,9 @@ class Validator{
         
         if (!this.pattern.phone) {
             //this.pattern.phone = /^\+?[78]([-()]*\d)*$/;
-            this.pattern.phone = /^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/;
+            this.pattern.phone = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
         }
-
-        if (!this.pattern.email) {
-            //this.pattern.email = /^\w+\@\w+\.\w{2,}$/;
-            this.pattern.email = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        }
-
-        if (!this.pattern.name) {
-            this.pattern.name = /[^а-яА-ЯЁё ]*$/
-        }
-
-
+        
     }
 };
 
