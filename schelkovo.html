@@ -326,6 +326,7 @@
                 </div>
                 <div class="right">
                     <input type="hidden" name="form_name" value="Заказать карту">
+                    <input type="hidden" name="club" value="schelkovo">
                     <p class="input-text"><input name="name" type="text" id="card_order-name" required placeholder="Ваше имя..."></p>
                     <p class="input-text"><input type="tel" name="phone" id="callback_form-phone" required
                                                  placeholder="Ваш номер телефона..."></p>
@@ -429,7 +430,8 @@
         <h2>Записаться на бесплатный&nbsp;визит</h2>
         <div class="form-wrapper">
             <form name="banner-form" id="banner-form" action="#" method="post">
-                <input type="hidden" name="form_name" value=" Записаться на визит">
+                <input type="hidden" name="form_name" value="Записаться на визит">
+                <input type="hidden" name="club" value="schelkovo">
                 <input name="name" type="text" id="banner-form-name" required placeholder="Ваше имя...">
                 <input type="tel" name="phone" id="phone" required placeholder="Ваш номер телефона...">
                 <button name="send" class="btn" type="submit">Записаться</button>
@@ -483,7 +485,7 @@
                             </label>
                             </div>
                             <div class="club">
-                                <input type="radio" id="footer_leto_schelkovo" name="club-name" value="schelkovo"><label
+                                <input type="radio" id="footer_leto_schelkovo" checked name="club-name" value="schelkovo"><label
                                     for="footer_leto_schelkovo">
                                 <h6>Тело «Щелково»</h6>
                                 <p>Россия, г. Щелково, ул. Советская, д.&nbsp;16</p>
@@ -538,8 +540,8 @@
         <div class="form-content">
             <form name="callback-form" id="form1" action="#" method="post">
                 <h4>Обратный звонок</h4>
-                <input type="hidden" name="form_name" value=" Обратный звонок">
-                <!--  <input type="hidden" name="club" value="<?=$_GET['club-name']?>"> -->
+                <input type="hidden" name="form_name" value="Обратный звонок">
+                <input type="hidden" name="club" value="schelkovo"> 
                 <p class="input-text"><input name="name" type="text" id="form1-name" required placeholder="Ваше имя..."></p>
                 <p class="input-text"><input type="tel" name="phone" id="callback_form1-phone" required
                                              placeholder="Ваш номер телефона..."></p>
@@ -564,7 +566,8 @@
         <div class="form-content">
             <form name="free-visit-form" id="form2" action="#" method="post">
                 <h4>Записаться на визит</h4>
-                <input type="hidden" name="form_name" value=" Записаться на визит">
+                <input type="hidden" name="form_name" value="Записаться на визит">
+                <input type="hidden" name="club" value="schelkovo">
                 <p class="input-text"><input name="name" type="text" id="form2-name" required placeholder="Ваше имя..."></p>
                 <p class="input-text"><input type="tel" name="phone" id="callback_form2-phone" required
                                              placeholder="Ваш номер телефона..."></p>

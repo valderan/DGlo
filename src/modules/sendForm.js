@@ -83,7 +83,6 @@ const sendForm = (formName) => {
             return item.tagName.toLowerCase() !== 'button' && item.type !== 'button';
         });
         
-        
        // проверим ошибки валидации
         if (form.querySelector('.error')) return;
             
@@ -113,9 +112,12 @@ const sendForm = (formName) => {
                         elem.classList.remove('success');
                         if (elem.type === 'checkbox') {
                             elem.checked = false;
-                        } else {
+                        };
+
+                        if (elem.type == 'text' || elem.type == 'tel') {
                             elem.value = '';
-                        }
+                        };
+
                         btnSend.innerText = btnText;
                     });
                     
