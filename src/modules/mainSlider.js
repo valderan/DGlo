@@ -37,8 +37,8 @@ const mainSlider = () => {
         };
 
         const startBlur = async (slide, nextSlide) => {
-             blur(slide, false, 70);
-             blur(nextSlide, true, 100);
+             await blur(slide, false, 40);
+             await blur(nextSlide, true, 120);
         };
 
         const workElements = () => {

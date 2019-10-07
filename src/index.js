@@ -18,6 +18,7 @@ import totop from "./modules/totop";
 import sendForm from "./modules/sendForm";
 import calc from "./modules/calc";
 import mainSlider from "./modules/mainSlider";
+import photoGalery from "./modules/photoGalery";
 
 // -- end IMPORT block --
 
@@ -55,6 +56,9 @@ gift();
 
 // калькулятор
 calc();
+
+// фотогалерея 
+photoGalery();
 
 
 // -- end BODY block --
