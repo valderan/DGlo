@@ -17,6 +17,7 @@ import checkValidation from "./modules/checkValidation";
 import totop from "./modules/totop";
 import sendForm from "./modules/sendForm";
 import calc from "./modules/calc";
+import mainSlider from "./modules/mainSlider";
 
 // -- end IMPORT block --
 
@@ -45,6 +46,9 @@ sendForm('banner-form');
 // -- end HEADER block --
 
 // -- BODY block --
+
+// главный слайдер
+mainSlider();
 
 // подарок
 gift();
