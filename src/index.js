@@ -16,6 +16,7 @@ import gift from "./modules/gift";
 import checkValidation from "./modules/checkValidation";
 import totop from "./modules/totop";
 import sendForm from "./modules/sendForm";
+import calc from "./modules/calc";
 
 // -- end IMPORT block --
 
@@ -47,6 +48,9 @@ sendForm('banner-form');
 
 // подарок
 gift();
+
+// калькулятор
+calc();
 
 
 // -- end BODY block --
