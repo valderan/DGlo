@@ -66,10 +66,8 @@ photoGalery();
 // prev: '.slider_prev',
 
 const carousel = new Carousel({
-    main: '.carousel',
     wrap: '.services-slider',
-    next: '.slider_next',
-    prev: '.slider_prev',
+    main: '.carousel',
     slidesToShow: 4,
     infinity: true
 });
