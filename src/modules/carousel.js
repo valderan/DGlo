@@ -1,4 +1,3 @@
-
 class Carousel{
     constructor(
         {
@@ -63,10 +62,11 @@ class Carousel{
         
             .glo-slider__item {
                 flex: 0 0 ${this.options.widthSlide}% !important;
-                margin: auto 0 !important;
+               !important;
             }
         `;
         document.head.appendChild(style);
+        
     }
 
     controlSlider() {

@@ -1536,6 +1536,7 @@ nav.popup-menu .close-menu-btn img {
 }
 
 .services-slider {
+  overflow: hidden;
   position: relative;
   display: flex;
   margin: 0 auto;
