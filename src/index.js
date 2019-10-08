@@ -62,13 +62,14 @@ calc();
 photoGalery();
 
 // карусель слайдер
-// next: '.slider_next',
-// prev: '.slider_prev',
+
 
 const carousel = new Carousel({
     wrap: '.services-slider',
     main: '.carousel',
     slidesToShow: 4,
+    next: '.slider_next',
+    prev: '.slider_prev',
     infinity: true
 });
 
