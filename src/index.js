@@ -19,6 +19,7 @@ import sendForm from "./modules/sendForm";
 import calc from "./modules/calc";
 import mainSlider from "./modules/mainSlider";
 import photoGalery from "./modules/photoGalery";
+import Carousel from "./modules/carousel";
 
 // -- end IMPORT block --
 
@@ -59,6 +60,21 @@ calc();
 
 // фотогалерея 
 photoGalery();
+
+// карусель слайдер
+// next: '.slider_next',
+// prev: '.slider_prev',
+
+const carousel = new Carousel({
+    main: '.carousel',
+    wrap: '.services-slider',
+    next: '.slider_next',
+    prev: '.slider_prev',
+    slidesToShow: 4,
+    infinity: true
+});
+
+carousel.init();
 
 
 // -- end BODY block --
