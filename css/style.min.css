@@ -1573,7 +1573,11 @@ nav.popup-menu .close-menu-btn img {
   margin: 0 auto
 }
 
-.services-slider .slider-arrow {
+.carousel {
+  position: relative;
+}
+
+.carousel .slider-arrow {
   position: absolute;
   top: 75px;
   margin-top: -18px;
@@ -1581,7 +1585,7 @@ nav.popup-menu .close-menu-btn img {
   cursor: pointer
 }
 
-.services-slider .slider-arrow span {
+.carousel .slider-arrow span {
   display: block;
   width: 36px;
   height: 37px;
@@ -1591,11 +1595,11 @@ nav.popup-menu .close-menu-btn img {
   padding-top: 11px
 }
 
-.services-slider .slider-arrow.prev {
+.carousel .slider-arrow.prev {
   left: 2px
 }
 
-.services-slider .slider-arrow.next {
+.carousel .slider-arrow.next {
   right: 2px
 }
 
