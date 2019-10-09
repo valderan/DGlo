@@ -1,4 +1,3 @@
-
 const totop = () => {
     
     const menu = document.querySelector('.top-menu');

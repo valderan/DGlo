@@ -11,8 +11,8 @@ class Carousel{
         }) {
         this.main = document.querySelector(main);
         this.wrap = document.querySelector(wrap);
-        this.next = document.querySelector(next);
-        this.prev = document.querySelector(prev);
+        this.next = this.main.querySelector(next);
+        this.prev = this.main.querySelector(prev);
         this.slides = [...this.wrap.children].filter((item) => {
             return item.className === 'slide';
         });

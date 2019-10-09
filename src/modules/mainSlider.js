@@ -10,7 +10,8 @@ const mainSlider = () => {
         let slider = [...document.querySelector('.main-slider').children];
 
         // filter: blur(0px) -> filter: blur(10px);
-        const blur = async (elem, reverse = false, interval = 100) => {
+        // async
+        const blur =  (elem, reverse = false, interval = 100) => {
             let idInt = 0,
                  index = (!reverse) ? 0 : 10;
                  if (reverse) {
@@ -36,9 +37,12 @@ const mainSlider = () => {
 
         };
 
+        // async
         const startBlur = async (slide, nextSlide) => {
-             await blur(slide, false, 40);
-             await blur(nextSlide, true, 120);
+            //  await blur(slide, false, 40);
+            //  await blur(nextSlide, true, 120);
+            blur(slide, false, 40);
+            blur(nextSlide, true, 120);
         };
 
         const workElements = () => {
@@ -63,9 +67,10 @@ const mainSlider = () => {
             return {slide: slide, nextSlide: nextSlide};
         }
 
+        // async
         const showSlider = async () => {
-            let workSliders = await workElements();
-            await startBlur(workSliders.slide, workSliders.nextSlide);
+            let workSliders = workElements();
+            startBlur(workSliders.slide, workSliders.nextSlide);
         }
 
         const startSlider = () => {

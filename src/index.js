@@ -20,7 +20,7 @@ import calc from "./modules/calc";
 import mainSlider from "./modules/mainSlider";
 import photoGalery from "./modules/photoGalery";
 import burgerMenu from "./modules/burgerMenu";
-import Carousel from "./modules/carousel"; 
+import Carousel from "./modules/carousel";
 
 // -- end IMPORT block --
 
@@ -69,12 +69,14 @@ burgerMenu();
 
 const carousel = new Carousel({
     wrap: '.services-slider',
-    main: '#carousel',
+    main: '.carousel',
     slidesToShow: 4,
-    prev: '.prev',
-    next: '.next',
+    next: '.slider_next',
+    prev: '.slider_prev',
     infinity: true
 });
 
 carousel.init();
+
+
 // -- end BODY block --
