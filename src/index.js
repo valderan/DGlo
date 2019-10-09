@@ -19,6 +19,7 @@ import sendForm from "./modules/sendForm";
 import calc from "./modules/calc";
 import mainSlider from "./modules/mainSlider";
 import photoGalery from "./modules/photoGalery";
+import burgerMenu from "./modules/burgerMenu";
 
 // -- end IMPORT block --
 
@@ -60,5 +61,7 @@ calc();
 // фотогалерея 
 photoGalery();
 
+// burger - меню
+burgerMenu();
 
 // -- end BODY block --
