@@ -63,7 +63,6 @@ photoGalery();
 
 // карусель слайдер
 
-
 const carousel = new Carousel({
     wrap: '.services-slider',
     main: '.carousel',
