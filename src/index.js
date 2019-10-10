@@ -1,7 +1,7 @@
 
-// -- IMPORT block --
+    // -- IMPORT block --
 
-// system
+    // system
 import "@babel/polyfill";
 import 'nodelist-foreach-polyfill';
 import elementClosest from 'element-closest';
@@ -22,61 +22,63 @@ import photoGalery from "./modules/photoGalery";
 import burgerMenu from "./modules/burgerMenu";
 import Carousel from "./modules/carousel";
 
-// -- end IMPORT block --
+    // -- end IMPORT block --
 
-// -- EVENT initialize block --
+window.addEventListener('DOMContentLoaded', function() {
+    // -- EVENT initialize block --
 
-// события для header index
-headerEvents();
+    // события для header index
+    headerEvents();
 
-// -- end EVENT block --
+    // -- end EVENT block --
 
-// -- HEADER block --
+    // -- HEADER block --
 
-// появление кнопки скрола вверх 
-totop();
+    // появление кнопки скрола вверх 
+    totop();
 
-//валидация форм в header
-checkValidation();
+    //валидация форм в header
+    checkValidation();
 
-// отправка форм
-sendForm('form1');
-sendForm('form2');
-sendForm('card_order');
-sendForm('footer_form');
-sendForm('banner-form');
+    // отправка форм
+    sendForm('form1');
+    sendForm('form2');
+    sendForm('card_order');
+    sendForm('footer_form');
+    sendForm('banner-form');
 
-// -- end HEADER block --
+    // -- end HEADER block --
 
-// -- BODY block --
+    // -- BODY block --
 
-// главный слайдер
-mainSlider();
+    // главный слайдер
+    mainSlider();
 
-// подарок
-gift();
+    // подарок
+    gift();
 
-// калькулятор
-calc();
+    // калькулятор
+    calc();
 
-// фотогалерея 
-photoGalery();
+    // фотогалерея 
+    photoGalery();
 
-// burger - меню
-burgerMenu();
+    // burger - меню
+    burgerMenu();
 
-// карусель слайдер
+    // карусель слайдер
 
-const carousel = new Carousel({
-    wrap: '.services-slider',
-    main: '.carousel',
-    slidesToShow: 4,
-    next: '.slider_next',
-    prev: '.slider_prev',
-    infinity: true
+    const carousel = new Carousel({
+        wrap: '.services-slider',
+        main: '.carousel',
+        slidesToShow: 4,
+        next: '.slider_next',
+        prev: '.slider_prev',
+        infinity: true
+    });
+
+    carousel.init();
+
+
+    // -- end BODY block --
 });
-
-carousel.init();
-
-
-// -- end BODY block --
